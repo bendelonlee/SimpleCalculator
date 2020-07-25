@@ -6,22 +6,35 @@
 
 
     <TableRow
+        android:gravity="center"
+
         android:paddingTop="@dimen/space"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="302dp"
+            android:gravity="center"
+
+            android:layout_width="100dp"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="first number" />
+                android:hint="Input first number"
+                android:id="@+id/edtNumber1"
+                android:gravity="center"
+                android:maxLength="10"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorPrimary"
+                android:hintColor="@color/colorPrimary"
+                />
         </com.google.android.material.textfield.TextInputLayout>
     </TableRow>
 
     <TableRow
+        android:gravity="center"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
@@ -32,7 +45,15 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="second number" />
+                android:hint="Input second number"
+                android:id="@+id/edtNumber2"
+                android:gravity="center"
+                android:maxLength="10"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorPrimary"
+                android:hintColor="@color/colorPrimary"
+
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
 
