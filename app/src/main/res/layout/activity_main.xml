@@ -68,18 +68,22 @@
 
         <Button
             style="@style/btnOperationStyle"
+            android:tag="addition"
             android:text="+" />
 
         <Button
             style="@style/btnOperationStyle"
+            android:tag="subtraction"
             android:text="-" />
 
         <Button
             style="@style/btnOperationStyle"
+            android:tag="multiplication"
             android:text="x" />
 
         <Button
             style="@style/btnOperationStyle"
+            android:tag="division"
             android:text="/" />
 
     </TableRow>
@@ -90,10 +94,12 @@
 
         <Button
             style="@style/btnOperationStyle"
+            android:tag="remainder"
             android:text="%" />
 
         <Button
             style="@style/btnOperationStyle"
+            android:tag="exponent"
             android:text="^" />
     </TableRow>
 
