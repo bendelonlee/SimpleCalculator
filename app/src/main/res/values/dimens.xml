@@ -3,4 +3,5 @@
     <dimen name="space">60dp</dimen>
     <dimen name="btnMargin">3sp</dimen>
     <dimen name="operationSign">35sp</dimen>
+    <dimen name="text">35sp</dimen>
 </resources>
