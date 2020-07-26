@@ -23,13 +23,12 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Input first number"
+                android:hint="@string/hint1"
                 android:id="@+id/edtNumber1"
                 android:gravity="center"
                 android:maxLength="10"
                 android:inputType="numberDecimal"
                 android:textColor="@color/colorPrimary"
-                android:hintColor="@color/colorPrimary"
                 />
         </com.google.android.material.textfield.TextInputLayout>
     </TableRow>
@@ -47,14 +46,12 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Input second number"
+                android:hint="@string/hint2"
                 android:id="@+id/edtNumber2"
                 android:gravity="center"
                 android:maxLength="10"
                 android:inputType="numberDecimal"
                 android:textColor="@color/colorPrimary"
-                android:hintColor="@color/colorPrimary"
-
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
