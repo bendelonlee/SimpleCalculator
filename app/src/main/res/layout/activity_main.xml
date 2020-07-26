@@ -68,19 +68,19 @@
 
         <Button
             style="@style/btnOperationStyle"
-            android:text="Button" />
+            android:text="+" />
 
         <Button
             style="@style/btnOperationStyle"
-            android:text="Button" />
+            android:text="-" />
 
         <Button
             style="@style/btnOperationStyle"
-            android:text="Button" />
+            android:text="x" />
 
         <Button
             style="@style/btnOperationStyle"
-            android:text="Button" />
+            android:text="/" />
 
     </TableRow>
 
@@ -90,11 +90,11 @@
 
         <Button
             style="@style/btnOperationStyle"
-            android:text="Button" />
+            android:text="%" />
 
         <Button
             style="@style/btnOperationStyle"
-            android:text="Button" />
+            android:text="^" />
     </TableRow>
 
     <Space
