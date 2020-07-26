@@ -67,27 +67,19 @@
         android:layout_height="match_parent" >
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/btnOperationStyle"
             android:text="Button" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/btnOperationStyle"
             android:text="Button" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/btnOperationStyle"
             android:text="Button" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/btnOperationStyle"
             android:text="Button" />
 
     </TableRow>
@@ -97,15 +89,11 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/btnOperationStyle"
             android:text="Button" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/btnOperationStyle"
             android:text="Button" />
     </TableRow>
 
