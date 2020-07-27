@@ -38,5 +38,22 @@ public class MainActivity extends AppCompatActivity {
         txtResult.setTypeface(monofettFont);
 
     }
+
+    public void compute(View v){
+        //declare variables
+        String firstInputAsText = edtNumber1.getText().toString();
+        String secondInputAsText = edtNumber2.getText().toString();
+        double firstNumber = 0;
+        double secondNumber = 0;
+        double resultAsNumber = 0;
+
+        //validate input
+
+        if(!firstInputAsText.isEmpty() && !secondInputAsText.isEmpty()) {
+            firstNumber = Double.parseDouble(firstInputAsText);
+            secondNumber = Double.parseDouble(secondInputAsText);
+
+        }
+    }
 }
 
