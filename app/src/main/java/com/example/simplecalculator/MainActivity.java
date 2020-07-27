@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.DecimalFormat;
 
+import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.graphics.Typeface;
@@ -43,6 +44,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void compute(View v) {
+
+        //setup animation
+        v.startAnimation(AnimationUtils.loadAnimation(this, R.anim.fade_animation));
+
         //declare variables
         String firstInputAsText = edtNumber1.getText().toString();
         String secondInputAsText = edtNumber2.getText().toString();
