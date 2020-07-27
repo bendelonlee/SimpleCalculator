@@ -2,9 +2,12 @@ package com.example.simplecalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.DecimalFormat;
+
 import android.widget.EditText;
 import android.widget.TextView;
 import android.graphics.Typeface;
+import android.view.View;
 
 
 import android.os.Bundle;
@@ -39,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void compute(View v){
+    public void compute(View v) {
         //declare variables
         String firstInputAsText = edtNumber1.getText().toString();
         String secondInputAsText = edtNumber2.getText().toString();
@@ -49,11 +52,34 @@ public class MainActivity extends AppCompatActivity {
 
         //validate input
 
-        if(!firstInputAsText.isEmpty() && !secondInputAsText.isEmpty()) {
+        if (!firstInputAsText.isEmpty() && !secondInputAsText.isEmpty()) {
             firstNumber = Double.parseDouble(firstInputAsText);
             secondNumber = Double.parseDouble(secondInputAsText);
 
         }
+
+        //get tag for the button that was clicked
+        String operation = v.getTag().toString();
+
+        //setup result depending on operation
+        if (operation.equals("addition")) {
+            resultAsNumber = firstNumber + secondNumber;
+        } else if (operation.equals("subtraction")) {
+            resultAsNumber = firstNumber - secondNumber;
+        } else if (operation.equals("multiplication")) {
+            resultAsNumber = firstNumber * secondNumber;
+        } else if (operation.equals("division")) {
+            resultAsNumber = firstNumber / secondNumber;
+        } else if (operation.equals("remainder")) {
+            resultAsNumber = firstNumber % secondNumber;
+        } else if (operation.equals("exponent")) {
+            resultAsNumber = Math.pow(firstNumber, secondNumber);
+        }
+
+        //format and display the result on screen
+        DecimalFormat df = new DecimalFormat("#,###.##");
+        String resultAsText = df.format(resultAsNumber);
+        txtResult.setText(resultAsText);
     }
 }
 
