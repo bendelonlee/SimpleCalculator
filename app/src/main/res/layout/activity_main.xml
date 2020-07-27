@@ -14,23 +14,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <com.google.android.material.textfield.TextInputLayout
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint1"
+            android:id="@+id/edtNumber1"
             android:gravity="center"
-
-            android:layout_width="100dp"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/hint1"
-                android:id="@+id/edtNumber1"
-                android:gravity="center"
-                android:maxLength="10"
-                android:inputType="numberDecimal"
-                android:textColor="@color/colorPrimary"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:maxLength="10"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            />
     </TableRow>
 
     <TableRow
@@ -39,11 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="302dp"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
+        <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/hint2"
@@ -52,10 +44,8 @@
                 android:maxLength="10"
                 android:inputType="numberDecimal"
                 android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
                 />
-        </com.google.android.material.textfield.TextInputLayout>
-
-
     </TableRow>
     <Space
         android:layout_width="wrap_content"

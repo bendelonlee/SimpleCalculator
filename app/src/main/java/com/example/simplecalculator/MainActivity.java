@@ -2,7 +2,7 @@ package com.example.simplecalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.material.textfield.TextInputEditText;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.graphics.Typeface;
 
@@ -12,8 +12,8 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
 
     //declare elements
-    TextInputEditText edtNumber1;
-    TextInputEditText edtNumber2;
+    EditText edtNumber1;
+    EditText edtNumber2;
     TextView txtResult;
     Typeface monofettFont;
     Typeface tekoFont;
@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        edtNumber1 = (TextInputEditText) findViewById(R.id.edtNumber1);
-        edtNumber2 = (TextInputEditText) findViewById(R.id.edtNumber2);
+        edtNumber1 = (EditText) findViewById(R.id.edtNumber1);
+        edtNumber2 = (EditText) findViewById(R.id.edtNumber2);
 
         txtResult = (TextView) findViewById(R.id.txtResult);
         monofettFont = Typeface.createFromAsset(getAssets(), "fonts/Monofett-Regular.ttf");
